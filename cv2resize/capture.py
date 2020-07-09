@@ -7,10 +7,10 @@ with picamera.PiCamera() as camera:
  camera.resolution = (320,240)
  camera.start_preview()
  time.sleep(2)
- camera.capture('test1.jpg')
+ camera.capture('photo1.jpg')
 
  # 入力画像の読み込み
- img = cv2.imread("/home/pi/picamera/test1.jpg")
+ img = cv2.imread("/home/pi/picamera/photo1.jpg")
 
  # グレースケール変換
  #gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -27,4 +27,4 @@ with picamera.PiCamera() as camera:
   camera.resolution = (640, 480)
   camera.start_preview()
   time.sleep(2)
-  camera.capture('test2.jpg')
+  camera.capture('photo2.jpg')
